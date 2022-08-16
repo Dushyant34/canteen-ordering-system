@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fef6e4;
+}
+p {
+  color: #172c66;
+}
+.images {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.468);
+  height: 82vh;
+}
+.container::before {
+  content: "";
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url(../../../media/Homepage/pexels-engin-akyurt-2347311.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -2;
+  opacity: 0.99;
+}
+.container {
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  /* background: linear-gradient(to left,white,#F24C4C); 
+  -webkit-background-clip:text ;
+  -webkit-text-fill-color: transparent; */
+}
+@keyframes top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* button */
+.button {
+  padding: 15px 20px;
+  border-radius: 10px;
+  color: #001858;
+  border: transparent;
+  background-color: #f582ae;
+  cursor: pointer;
+}
+.button:hover {
+  color: #f24c4c;
+  background-color: white;
+  border: 1px #f24c4c;
+  transition: 0.8s;
+}
+
+.head {
+  font-size: 4rem;
+  animation: top 2s linear 1s;
+}
+
+/* famous food */
+.heading {
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 1rem;
+  color: #001858;
+}
+span {
+  color: #f582ae;
+}
+
+/* special dishes */
+.speciality {
+  /* border:2px solid; */
+  margin: 2rem 4rem;
+  padding: 1rem 0rem;
+}
+.speciality .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  box-sizing: border-box;
+}
+
+.speciality .box-container .box {
+  flex: 1 1 10rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+ 
+}
+
+
+.speciality .box-container .box .content {
+  text-align: center;
+  background-color: #001858;
+  padding: 1rem;
+}
+
+.speciality .box-container .box .content ion-icon {
+  width: 100px;
+  height: 30px;
+ color: white;
+}
+
+
+.speciality .box-container .box .content h3 {
+  font-size: 1.5rem;
+  color: #fffffe;
+}
+
+.speciality .box-container .box .content p {
+  font-size: 0.6rem;
+  color: #fffffe;
+  padding: 1rem 0;
+}
+/*  About us */
+.aboutus {
+  margin: 80px 0px;
+}
+.container-2 {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 20px;
+  margin: 10px 20px;
+}
+.title {
+  color: #666;
+  text-align: center;
+  position: relative;
+  top: -20px;
+}
+.titel h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+.content-2 p {
+  width: 40vw;
+  color: #333;
+  font-weight: 500;
+}
+.content h3{
+  text-transform: uppercase;
+}
+.image img {
+  width: 400px;
+  border-radius: 5px;
+}
+/* copyright */
+footer {
+  position: relative;
+  height: 150px;
+  background-color: #005691;
+  padding: 0px 20px;
+}
+#footer-h {
+  text-align: center;
+  color: #e8f1f5;
+  padding: 20px 0px;
+  font-size: 1.2rem;
+}
+.social_icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.social_icon li {
+  list-style: none;
+}
+.social_icon li a {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0px 6px;
+  color: white;
+  transition: 1.5s;
+}
+.social_icon li :hover {
+  transform: translateY(-10px);
+}

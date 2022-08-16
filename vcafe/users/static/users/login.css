@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fef6e4;
+}
+label {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+input[type="text"],
+input[type="password"] {
+  width: 20px;
+  padding: 15px 4px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+
+.holmes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.LogIn {
+  border-radius: 10px;
+  background-color: #fafafa;
+  padding: 1rem 2rem;
+  width: 28vw;
+  box-shadow: 0px 20px 30px 0px rgb(0 0 0 / 7%);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.LogIn input {
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 30px;
+  width: 90%;
+}
+
+input[type="submit"] {
+  background-color: #f582ae;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px auto;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 20px;
+  font-family: "montserrat", sans-serif;
+  /* position: relative;   */
+}
+input[type="submit"]:hover{
+  background-color: #812448;
+}
+input[placeholder] {
+  font-family: "montserrat", sans-serif;
+  font-size: 14px;
+}
+
+/* form*/
+.form-control label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.form-control {
+  margin-bottom: 10px;
+  position: relative;
+}
+.form-control i {
+  position: absolute;
+  top: 41px;
+  right: 14%;
+  visibility: hidden;
+}
+.form-control.error input {
+  border-color: #e74c3c;
+}
+.form-control.success input {
+  border-color: #2ecc71;
+}
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control span {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 10px;
+  position: absolute;
+  left: 10px;
+  bottom: -9px;
+  margin-bottom: 10px;
+  visibility: hidden;
+}
+.form-control.error span {
+  visibility: visible;
+}

@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fef6e4;
+  font-family: "poppins", sans-serif;
+}
+.contact-section {
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  padding: 1rem 2rem;
+  width: 28vw;
+}
+
+.shazam {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110vh;
+}
+
+.contact-section h1 {
+  text-align: center;
+  margin: 1rem 0rem;
+  color: black;
+}
+.border {
+  width: 2vw;
+  height: 2px;
+  background: #dadada;
+  margin: 4px auto;
+  padding: 2px;
+  display: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: "Roboto", sans-serif;
+}
+input:hover,
+textarea:hover {
+  border: 1px solid grey;
+}
+
+input[type="submit"] {
+  background-color: #f582ae;
+  color: white;
+  padding: 12px 20px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #700d08;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* form */
+.form-control label {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.form-control {
+  margin-bottom: 10px;
+  position: relative;
+}
+.form-control i {
+  position: absolute;
+  top: 41px;
+  right: 2%;
+  visibility: hidden;
+}
+.form-control.error input {
+  border-color: #e74c3c;
+}
+.form-control.success input {
+  border-color: #2ecc71;
+}
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control span {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 10px;
+  position: absolute;
+  left: 10px;
+  bottom: -9px;
+  margin-bottom: 10px;
+  visibility: hidden;
+}
+.form-control.error span {
+  visibility: visible;
+}

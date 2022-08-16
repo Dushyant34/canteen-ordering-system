@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fef6e4;
+}
+
+.registration-form {
+  border-radius: 10px;
+  background-color: #fafafa;
+  box-shadow: 0px 20px 30px 0px rgb(0 0 0 / 7%);
+  width: 28vw;
+  padding: 1rem 2rem;
+  line-height: 2.5rem;
+}
+
+.pokemon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.registration-form h1 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: blue;
+}
+input[placeholder] {
+  font-family: "montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.registration-form input {
+  padding: 10px 10px;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 7px;
+  border: 1px solid #ccc;
+}
+
+input:hover {
+  border: 1px solid grey;
+}
+
+/* Set a style for all buttons */
+#btn {
+  background-color: #f582ae;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px auto;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: "montserrat", sans-serif;
+  /* position: relative; */
+}
+
+/* Add a hover effect for buttons */
+#btn:hover {
+  background-color: #d9180e;
+}
+.form-control label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.form-control {
+  margin-bottom: 10px;
+  position: relative;
+}
+.form-control i {
+  position: absolute;
+  top: 55px;
+  right: 6%;
+  visibility: hidden;
+}
+.form-control.error input {
+  border-color: #e74c3c;
+}
+.form-control.success input {
+  border-color: #2ecc71;
+}
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control span {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 10px;
+  position: absolute;
+  left: 10px;
+  bottom: -20px;
+  visibility: hidden;
+}
+.form-control.error span {
+  visibility: visible;
+}

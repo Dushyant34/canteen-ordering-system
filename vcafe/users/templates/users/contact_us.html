@@ -1,0 +1,124 @@
+{% extends 'users/navbar.html' %} {% load static %} {% block content %}
+<head>
+  <link
+  href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+  rel="stylesheet"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" type="text/css" href= {% static 'users/contact_us.css' %} />
+  {% comment %} <style>
+    /* form*/
+.form-control label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.form-control {
+  margin-bottom: 10px;
+  position: relative;
+}
+.form-control i {
+  position: absolute;
+  top: 41px;
+  right: 14%;
+  visibility: hidden;
+}
+.form-control.error input {
+  border-color: #e74c3c;
+}
+.form-control.success input {
+  border-color: #2ecc71;
+}
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control span {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 10px;
+  position: absolute;
+  left: 10px;
+  bottom: -9px;
+  margin-bottom: 10px;
+  visibility: hidden;
+}
+.form-control.error span {
+  visibility: visible;
+}
+
+  </style> {% endcomment %}
+</head>
+<body>
+  <div class="shazam">
+    <div class="contact-section">
+      <h1>Contact Us</h1>
+      <form action="#" method="POST" id="form">
+        <div class="form-control">
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Enter your first name"
+          />
+          <span>error</span>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+        </div>
+        <div class="form-control">
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Enter your last name"
+          />
+          <span>error</span>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+        </div>
+        <div class="form-control">
+          <label for="lname">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+          <span>error</span>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+        </div>
+      <div class="form-control">
+        <label for="subject">Subject</label>
+        <textarea
+        id="subject"
+        name="subject"
+        placeholder="Enter your query"
+        style="height: 100px"
+        ></textarea>
+        <span>erro</span>
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+      </div>
+        
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </div>
+  <script src= {% static 'users/contact.js' %}></script>
+</body>
+{% endblock content %}

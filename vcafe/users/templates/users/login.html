@@ -1,0 +1,66 @@
+{% extends 'users/navbar.html' %} {% load static %} {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log-In</title>
+    <link rel="stylesheet"  href= {% static 'users/login.css' %} />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+<style>
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: blue;
+}
+</style>
+  <body>
+    <div class="holmes">
+      <div class="LogIn">
+        <h1 class="h" style="color: black">Log In / <a href= {% url 'users:register' %} >Sign in</a></h1>
+        <form action="#" method="POST" onsubmit="return validate()">
+          {% csrf_token %}
+          <div class="form-control">
+            <label>Username:</label>
+            <input
+              type="text"
+              id="Uname"
+              name="email"
+              placeholder="Username"
+              autocomplete="off"
+            />
+            <span>error</span>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+          </div>
+
+          <div class="form-control">
+            <label>Password:</label>
+            <input
+              type="password"
+              id="psw"
+              name="password"
+              placeholder="Password"
+            />
+            <span>error</span>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+          </div>
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+    </div>
+    <script src= {% static 'users/login.js' %}></script>
+  </body>
+</html>
+{% endblock content %}
